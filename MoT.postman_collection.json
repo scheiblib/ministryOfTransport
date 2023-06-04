@@ -1,0 +1,614 @@
+{
+	"info": {
+		"_postman_id": "1d795d48-c204-42ae-bccd-75434fc919cf",
+		"name": "MoT",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "12996299"
+	},
+	"item": [
+		{
+			"name": "Owner Endpoints",
+			"item": [
+				{
+					"name": "Create Owner",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"Scheibli\",\r\n    \"lastName\" : \"Bence\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/owner/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"owner",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/owner/findById/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"owner",
+								"findById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/owner/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"owner",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Owner",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"Lakatos\",\r\n    \"lastName\" : \"István\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/owner/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"owner",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete By Id",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/owner/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"owner",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Buy Vehicle",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/owner/buy/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"owner",
+								"buy",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Own Vehicles",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/owner/vehicles/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"owner",
+								"vehicles",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Vehicle Endpoints",
+			"item": [
+				{
+					"name": "Create Vehicle",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"expiry\" : \"2023-03-30\",\r\n    \"type\" : \"Kia\",\r\n    \"plate\" : \"ASD123\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/vehicle/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vehicle",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Plate",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/vehicle/findByPlate/ASD123",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vehicle",
+								"findByPlate",
+								"ASD123"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/vehicle/findById/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vehicle",
+								"findById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/vehicle/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vehicle",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Vehicle",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"type\" : \"Hyundai\",\r\n    \"plate\" : \"ABC321\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/vehicle/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vehicle",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Vehicle",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/vehicle/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"vehicle",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Station Endpoints",
+			"item": [
+				{
+					"name": "Create Station",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Autentik\",\r\n    \"city\" : \"Győr\",\r\n    \"address\" : \"Szent István út 20\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/station/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"station",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find Station By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/station/findById/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"station",
+								"findById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All Station",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/station/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"station",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Station",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"name\" : \"Hovány\",\r\n    \"city\" : \" Budapest\",\r\n    \"address\" : \"Budai út 1.\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/station/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"station",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Station",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/station/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"station",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Hire tester",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/station/hire/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"station",
+								"hire",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "List Employees",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/station/employees/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"station",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Fire tester",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/station/fire/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"station",
+								"fire",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Test",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/station/test/1/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"station",
+								"test",
+								"1",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tester Endpoints",
+			"item": [
+				{
+					"name": "Create Tester",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"Scheibli\",\r\n    \"lastName\" : \"Bence\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/tester/create",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tester",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find By Id",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tester/findById/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tester",
+								"findById",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Find All",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tester/findAll",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tester",
+								"findAll"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Update Tester",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"firstName\" : \"Lakatos\",\r\n    \"lastName\" : \"István\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{baseUrl}}/tester/update/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tester",
+								"update",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Delete Tester",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{baseUrl}}/tester/delete/1",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"tester",
+								"delete",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
